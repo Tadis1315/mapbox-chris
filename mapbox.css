@@ -6,6 +6,10 @@
     display: flex;
 }
 
+a {
+    text-decoration: none;
+}
+
 :root {
     --black: #121212;
     --green: #435a31;
@@ -13,6 +17,7 @@
     --yellow: #fff95f;
     --black: #1b1b1b;
     --blue: #007afc;
+    --blue: #4708db;
     --white: #fff;
 }
 
@@ -168,6 +173,10 @@ header a {
 
 /* #MAPS AND LOCATION SECTION*/
 
+#Location {
+    background-color: var(--black);
+}
+
 .World {
     margin-left: 2rem;
     margin-bottom: 1.5rem;
@@ -207,9 +216,16 @@ header a {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-
+#SVG img{
+    opacity: 0.3;
+    filter: grayscale(100);
+}
+#SVG img:hover{
+    opacity: 1;
+    
+}
 .Snap img {
     margin-left: 0;
     width: 25rem;
@@ -218,6 +234,11 @@ header a {
 
 
 /* #MAP SECTION*/
+
+#Map {
+    background-color: var(--black);
+    margin-top: 0;
+}
 
 .APIs {
     text-align: center;
@@ -252,7 +273,7 @@ header a {
     font-size: 1.3rem;
 }
 
-#bun a {
+#ban a {
     text-decoration: none;
     color: white;
     font-size: 1.33rem;
@@ -261,6 +282,8 @@ header a {
     border-radius: 2rem;
     border-color: transparent;
     padding: 12px 35px;
+    margin-left: 30rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     border: 2px solid white;
 }
@@ -462,8 +485,8 @@ header a {
 }
 
 .Bryant img {
-    width: 850px;
-    height: 550px;
+    width: 700px;
+    height: 500px;
     margin-left: -15rem;
     margin-right: 5rem;
     margin-top: 0;
@@ -522,8 +545,8 @@ header a {
 }
 
 .DC img {
-    width: 800px;
-    height: 650px;
+    width: 530px;
+    height: 400px;
     margin-left: 8rem;
     border-radius: 2rem;
 }
@@ -564,11 +587,16 @@ header a {
 
 .web {
     background-color: #202020;
+    background-image: url("img/America.png ");
+    background-repeat: no-repeat;
+    background-size: 16rem 18rem;
+    background-position-x: 6rem;
+    background-position-y: 8rem;
     width: 25rem;
     height: 27rem;
     border: 1px solid #202020;
     border-radius: 1.5rem;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
 }
 
 .web h3 {
@@ -579,19 +607,17 @@ header a {
     margin-left: 2rem;
 }
 
-.web img {
-    width: 230px;
-    height: 200px;
-    margin-top: 4rem;
-    margin-left: 1rem;
-}
-
 .web:hover {
     background-color: var(--blue);
 }
 
 .mobile {
     background-color: #202020;
+    background-image: url("img/Cole Valley.png ");
+    background-repeat: no-repeat;
+    background-size: 24rem 18rem;
+    background-position-x: 2rem;
+    background-position-y: 10rem;
     width: 25rem;
     height: 27rem;
     border-radius: 1.5rem;
@@ -606,18 +632,16 @@ header a {
     margin-left: 2rem;
 }
 
-.mobile img {
-    width: 400px;
-    height: 250px;
-    margin-top: 2rem;
-    margin-left: 2rem;
-}
-
 .mobile:hover {
     background-color: var(--blue);
 }
 
 .ar {
+    background-image: url("img/O'Farrell.png");
+    background-repeat: no-repeat;
+    background-size: 16rem 15rem;
+    background-position-x: 4rem;
+    background-position-y: 10rem;
     width: 25rem;
     height: 27rem;
     border-radius: 1.5rem;
@@ -633,23 +657,22 @@ header a {
     margin-left: 2rem;
 }
 
-.ar img {
-    width: 240px;
-    height: 200px;
-    margin-top: 2rem;
-    margin-left: 1.5rem;
-}
-
 .ar:hover {
     background-color: var(--blue);
 }
 
 .atlas {
+    background-image: url("img/Newyork.png");
+    background-repeat: no-repeat;
+    background-size: 16rem;
+    background-position-x: 4rem;
+    background-position-y: 10rem;
     background-color: #202020;
     width: 25rem;
     height: 27rem;
     border-radius: 1.5rem;
     margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .atlas h3 {
@@ -658,12 +681,6 @@ header a {
     font-weight: 700;
     line-height: 1.1em;
     margin-left: 2rem;
-}
-
-.atlas img {
-    width: 230px;
-    height: 180px;
-    margin-top: 3rem;
 }
 
 .web:hover {
@@ -694,9 +711,10 @@ header a {
 
 .container {
     display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 450px 450px;
-    grid-gap: 40px;
+    grid-template-columns: 550px 550px;
+    grid-template-rows: 490px 490px;
+    grid-column-gap: 5px;
+    grid-row-gap: 20px;
     color: burlywood;
     background-color: #1b1b1b;
     justify-content: center;
@@ -706,17 +724,27 @@ header a {
 .item1 {
     background-color: #fff95f;
     border-radius: 2rem;
+    background-image: url("img/Europe.png");
+    background-size: 25rem;
+    background-repeat: no-repeat;
+    background-position-x: 5rem;
+    background-position-y: 8rem;
+}
+
+.item1:hover {
+    transform: scale(1.05);
+    transition: all 0.1 ease-out;
 }
 
 .logo1 img {
     margin-left: 0;
-    width: 15rem;
-    height: 7rem;
+    width: 20rem;
+    height: 10rem;
 }
 
 .pic1 img {
-    width: 23rem;
-    height: 21rem;
+    width: 25rem;
+    height: 23rem;
     margin-left: 3rem;
     padding-bottom: -8rem;
 }
@@ -727,6 +755,11 @@ header a {
     background-image: url("img/Dogo\ strava.png");
     background-position: right;
     margin-right: 3rem;
+}
+
+.item2:hover {
+    transform: scale(1.05);
+    transition: all 0.1 ease-out;
 }
 
 .logo2 {
@@ -747,9 +780,9 @@ header a {
     background-position: center;
 }
 
-.item3 :hover {
-    transform: scale(0.7s);
-    transition: all 0.3s ease-in-out;
+.item3:hover {
+    transform: scale(1.05);
+    transition: all 0.1 ease-out;
 }
 
 .logo3 img {
@@ -773,6 +806,16 @@ header a {
     background-color: #e2e2e2;
     border-radius: 2rem;
     margin-right: 3rem;
+    background-image: url("img/Vans.png");
+    background-position-x: 3rem;
+    background-position-y: 10rem;
+    background-repeat: no-repeat;
+    background-size: 25rem;
+}
+
+.item4:hover {
+    transform: scale(1.05);
+    transition: all 0.1 ease-out;
 }
 
 
@@ -784,23 +827,21 @@ header a {
     border: 1px solid white;
     background-color: transparent;
     color: white;
-    margin-bottom: 3rem;
-}*/
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+} */
 
 
 /*  FOOTER */
 
-#footer-content li a:hover {
-    background-color: var(--blue);
-}
-
 footer {
-    height: 25rem;
-    background-color: var(--black);
+    background-color: #121212;
+    padding: 100px 50px 60px 35px;
+    font-family: Cerapro, sans-serif;
 }
 
-.head h2 {
-    color: #fff;
+#footer-content {
+    justify-content: space-between;
 }
 
 .list-item li a {
@@ -809,57 +850,62 @@ footer {
     list-style: none;
 }
 
-#footer-content a:hover {
-    background-color: var(--blue);
-}
-
 footer li {
+    /* color: #9ba2b2; */
+    line-height: 1rem;
     list-style: none;
-    color: #121212;
+    color: #0e1012;
     margin-bottom: 1rem;
 }
 
-#footer-bottom a {
-    justify-content: space-between;
-    text-decoration: none;
-    color: #79aca4;
-    margin-right: 10px;
-}
-
 #footer-bottom {
     justify-content: space-between;
 }
 
-#icons {
-    justify-content: space-between;
-}
-
-.fisrt {
-    margin-right: 5rem;
-}
-
-
-/* FOOTER
-
-
-
-  margin-left: 50rem;
-
-
-
-
-.list-item a {
-    text-decoration: none;
+#footer-bottom a {
     color: #9ba2b2;
 }
 
-#
+footer h2 {
+    color: white;
 }
 
-
-
-#footer-bottom {
-    color: var(--blue);
+.copy {
+    margin-right: 3.5rem;
 }
 
-*/
+.terms {
+    margin-right: 3.5rem;
+}
+
+.priva {
+    margin-right: 3.5rem;
+}
+
+.security {
+    margin-right: 3.5rem;
+}
+
+.twit {
+    margin-left: 3.5rem;
+}
+
+.fb {
+    margin-left: 3.5rem;
+}
+
+.in {
+    margin-left: 3.5rem;
+}
+
+.insta {
+    margin-left: 3.5rem;
+}
+
+#footer-content a:hover {
+    color: #4708db;
+}
+
+#footer-bottom a:hover {
+    color: #4708db;
+}
